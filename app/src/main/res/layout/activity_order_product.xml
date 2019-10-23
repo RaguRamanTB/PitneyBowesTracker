@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20dp"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:id="@+id/order_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/pitneylogo" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/welcome"
+            android:textColor="@color/white_greyish"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/orderCAPS"
+            android:textColor="@color/white_greyish"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:background="@color/white_greyish" />
+
+        <EditText
+            android:id="@+id/ordersID"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:drawablePadding="8dp"
+            android:hint="@string/enter_order_id"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp"
+            android:textAllCaps="true"/>
+
+        <EditText
+            android:id="@+id/customersID"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:drawablePadding="8dp"
+            android:textAllCaps="true"
+            android:hint="@string/cust"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="2px"
+            android:background="@color/white_greyish" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/select_product_id"
+            android:textColor="@color/white_greyish"
+            android:textSize="16sp"/>
+
+        <Spinner
+            android:id="@+id/prodID"
+            android:prompt="@string/select_product_id"
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/select_seller_id"
+            android:textColor="@color/white_greyish"
+            android:textSize="16sp"/>
+
+        <Spinner
+            android:id="@+id/sellerID"
+            android:prompt="@string/select_seller_id"
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="35dp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/select_location"
+            android:textColor="@color/white_greyish"
+            android:textSize="16sp"/>
+
+        <Spinner
+            android:id="@+id/locationID"
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="35dp"/>
+
+
+        <Button
+            android:id="@+id/placeOrder"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/loginbutton_selector"
+            android:padding="3dp"
+            android:text="@string/placeOrder"
+            android:textColor="#009688"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:onClick="postValue"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
